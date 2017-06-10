@@ -1,0 +1,41 @@
+(frame-components)
+(Machine)
+(  vendor: Stepcraft)
+(  model: 600)
+(  description: stepcraft uccnc)
+(T2  D=6. CR=0. TAPER=90deg - ZMIN=-3.11 - drill)
+G90
+G0 G53 Z0.
+
+(Drill1)
+T2 M6 (drill D=6.)
+S16000 M3
+G61
+G54
+M8
+G43 H2
+G0 X183.211 Y48.7
+Z5.
+Z2.
+G81 X183.211 Y48.7 Z-3.11 R1.98 F15
+Y16.943
+X147.685 Y17.64
+X129.126 Y17.604
+X6.35 Y13.35
+X36.85
+X50.55 Y13.446
+X81.05
+X93.6 Y16.907
+Y48.665
+X81.65 Y63.65
+X49.95
+X37.45 Y63.45
+X36.85 Y43.85
+X6.35
+X5.75 Y63.45
+G80
+Z5.
+M9
+M5
+G53 Z0.
+M30
